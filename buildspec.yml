@@ -7,8 +7,6 @@ phases:
   post_build:
     commands:
       - mvn package
-      - mv target/my-web-app.war my-web-app.war
 artifacts:
   files:
-    - my-web-app.war
-    - .ebextensions/**/*
+    - target/spring-petclinic-2.4.0.BUILD-SNAPSHOT.jar
